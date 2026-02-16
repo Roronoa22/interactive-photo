@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interactive Photo Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="initializeGallery()">
+
+    <h1>Interactive Photo Gallery</h1>
+
+    <div id="image">
+        Hover over or focus on an image below to display here.
+    </div>
+
+    <div class="gallery">
+        <img src="https://picsum.photos/id/1025/600/400"
+             alt="Cute pug dog wearing a red collar"
+             onmouseover="upDate(this)"
+             onmouseleave="undo()"
+             onfocus="upDate(this)"
+             onblur="undo()">
+
+        <img src="https://picsum.photos/id/1015/600/400"
+             alt="Mountain landscape with snow and river"
+             onmouseover="upDate(this)"
+             onmouseleave="undo()"
+             onfocus="upDate(this)"
+             onblur="undo()">
+
+        <img src="https://picsum.photos/id/1043/600/400"
+             alt="Calm lake reflecting trees and mountains"
+             onmouseover="upDate(this)"
+             onmouseleave="undo()"
+             onfocus="upDate(this)"
+             onblur="undo()">
+
+        <img src="https://picsum.photos/id/1069/600/400"
+             alt="Colorful city street at sunset"
+             onmouseover="upDate(this)"
+             onmouseleave="undo()"
+             onfocus="upDate(this)"
+             onblur="undo()">
+
+        <img src="https://picsum.photos/id/100/600/400"
+             alt="Person on mountain peak watching sunrise"
+             onmouseover="upDate(this)"
+             onmouseleave="undo()"
+             onfocus="upDate(this)"
+             onblur="undo()">
+
+        <img src="https://picsum.photos/id/1018/600/400"
+             alt="Misty mountain valley with sunlight"
+             onmouseover="upDate(this)"
+             onmouseleave="undo()"
+             onfocus="upDate(this)"
+             onblur="undo()">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
